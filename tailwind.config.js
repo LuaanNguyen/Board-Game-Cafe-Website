@@ -6,6 +6,13 @@ export default {
       cursor: {
         default: "url(/bobacursor.png), default",
         pointer: "url(/bobapointer.png), pointer",
+    },
+      colors: {
+        orangeMain: "#FFA62F",
+        orangeLight: "#FFC96F",
+        orangePale: "#FFE8C8",
+        orangeVeryPale: "#FEFAF6",
+        greenAccent: "#ACD793",
       },
     },
   },
