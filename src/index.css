@@ -3,5 +3,10 @@
 @tailwind utilities;
 
 * {
-  @apply bg-black text-white;
+  @apply bg-white text-black;
+  @apply cursor-default;
+}
+
+a:hover {
+  @apply cursor-pointer;
 }
