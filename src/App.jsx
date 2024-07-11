@@ -12,6 +12,7 @@ function App() {
       <AnimatedBackground />
       <Footer />
     </section>
+
   );
 }
 
