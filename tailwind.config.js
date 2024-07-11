@@ -7,6 +7,7 @@ export default {
         orangeMain: "#FFA62F",
         orangeLight: "#FFC96F",
         orangePale: "#FFE8C8",
+        orangeVeryPale: "#FEFAF6",
         greenAccent: "#ACD793",
       },
     },
