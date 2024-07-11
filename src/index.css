@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply bg-white text-black;
+  @apply cursor-default;
+}
+
+a:hover {
+  @apply cursor-pointer;
+
 .home {
   @apply w-[100vw] h-[100vh] bg-white;
 }
