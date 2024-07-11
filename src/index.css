@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  @apply bg-black text-white;
+.home {
+  @apply w-[100vw] h-[100vh] bg-orangePale;
 }

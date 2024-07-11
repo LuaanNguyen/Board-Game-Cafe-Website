@@ -1,5 +1,11 @@
+/* eslint-disable react/no-unknown-property */
+
 function App() {
-  return <>Board Game Cafe Website</>;
+  return (
+    <section className="home">
+      <h1>Main</h1>
+    </section>
+  );
 }
 
 export default App;
