@@ -2,11 +2,13 @@ import SocialMediaLinks from "../SocialMediaLinks";
 
 function Footer() {
   return (
-    <footer className="flex flex-col w-[100vw] h-[70vh] mb-20 items-center justify-center ">
-      <section className="p-8 max-md:p-4 bg-orangePale w-[70%] h-[90%] rounded-full shadow-lg grid grid-cols-2 max-lg:grid-cols-1 border-4 border-orangeVeryPale">
-        <div className="flex flex-col justify-between max-md:items-center p-10 gap-5 max-md:p-2">
-          <h1 className="text-5xl font-semibold">Apply for Franchise</h1>
-          <p className="text-gray-800">
+    <footer className="flex flex-col w-[100vw] h-[70vh] items-center justify-center">
+      <section className="p-8 max-md:p-4 bg-orangePale  w-[70%] h-[90%] rounded-2xl mb-10 shadow-lg grid grid-cols-2 max-lg:grid-cols-1 border-4 border-orangeVeryPale">
+        <div className="flex flex-col bg-orangePale  justify-between max-md:items-center p-10 gap-5 max-md:p-2">
+          <h1 className="text-5xl font-semibold bg-orangePale">
+            Apply for Franchise
+          </h1>
+          <p className="text-gray-800 bg-orangePale">
             Contact our Franchise Team. Be sure to choose FRANCHISE as your
             Subject and write to us. Our Franchise team will be in touch
             shortly.

@@ -9,10 +9,9 @@ function App() {
     <section className="home">
       <Navbar />
       <Home />
-      <AnimatedBackground />
+      {/* <AnimatedBackground /> */}
       <Footer />
     </section>
-
   );
 }
 
