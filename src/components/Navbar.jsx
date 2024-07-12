@@ -12,16 +12,19 @@ function Navbar() {
   return (
     <nav className="w-full fixed top-0 left-0 z-10">
       <section
-        className={`my-10 mx-36 max-lg:mx-4 rounded-2xl flex justify-between items-center px-6 max-md:hidden ${
+        className={`mt-4 mb-10 mx-32 max-lg:mx-4 rounded-2xl flex justify-between items-center px-6 max-lg:hidden ${
           pos !== 0
             ? ` bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 shadow-xl`
             : ``
         }  z-1`}
       >
         <Link to="/">
-          <img src="/sipnplay.png" className="h-20 mx-2 bg-transparent"></img>
+          <img
+            src="/sipnplay.png"
+            className="h-20 w-20 mx-2 bg-transparent"
+          ></img>
         </Link>
-        <div className="flex gap-6">
+        <div className="flex gap-2 items-center">
           <Link
             to="/about"
             className="hover:bg-orangeLight hover:rounded-full p-2"
@@ -79,8 +82,8 @@ function Navbar() {
 
 function MobileNavbar({ setIsOpen, isOpen }) {
   return (
-    <nav className="w-full fixed top-0 left-0 z-10 md:hidden">
-      <section className=" my-2 mx-4 rounded-2xl flex flex-col justify-between items-center px-2  bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 shadow-xl z-1">
+    <nav className="w-full fixed top-0 left-0 z-10 lg:hidden">
+      <section className="my-2 mx-8 rounded-2xl flex flex-col justify-between items-center px-2  bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 shadow-xl z-1">
         <div className="w-full flex flex-row justify-between">
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? (

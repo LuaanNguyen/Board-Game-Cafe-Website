@@ -40,7 +40,6 @@ function App() {
           </Routes>
           <AnimatedBackground />
           <Footer />
-
         </section>
       )}
     </Router>

@@ -1,15 +1,13 @@
-
-import AnimatedBackground from "./components/AnimatedBackground";
-import MenuItems from "./components/menuItems";
-
-
 function Home() {
   return (
-    <section className="w-[100vw] h-[100vh] mt-16">
+    <section className="w-[80vw] h-[300lvh] lg:mx-20 mt-24">
       {/* sip and play with image placeholder for 3d boba */}
-      <div className="flex items-center justify-center w-[100vw]">
+      <div className="flex items-center justify-center w-[100vw] px-10">
         <div className="max-w-screen-sm">
-          <h1 className="font-bold text-7xl mb-2 "> Sip & Play </h1>
+          <h1 className="font-bold text-7xl max-md:text-4xl mb-2 ">
+            {" "}
+            Sip & Play{" "}
+          </h1>
           <h2 className="font-bold text-3xl mb-4"> Boardgame Cafe</h2>
           <p className="font-sans mb-6">
             Come on in with your friends and family and play boardgames from our
@@ -26,12 +24,12 @@ function Home() {
             Buy Now{" "}
           </button>
         </div>
-        <div className="w-2/5 flex">
+        <div className="w-2/5 flex max-lg:hidden">
           <img src="/panda.png" className="w-full flex-end" />
         </div>
       </div>
 
-      {/* view menu section*/}
+      {/* view menu section
       <div className="my-32 text-4xl">
         <h3 className="text-center font-bold mb-24">
           {" "}
@@ -39,34 +37,34 @@ function Home() {
         </h3>
         <div className="flex justify-evenly">
           <div className="flex flex-col items-center">
-            <div class="menuIcon">
+            <div className="menuIcon">
               <img src="/coffeeCup.png" />
             </div>
-            <p class="menuItemsText"> coffee </p>
+            <p className="menuItemsText"> coffee </p>
           </div>
           <div className="flex flex-col items-center">
-            <div class="menuIcon">
+            <div className="menuIcon">
               <img src="/bobaCup.png" />
             </div>
-            <p class="menuItemsText"> boba </p>
+            <p className="menuItemsText"> boba </p>
           </div>
           <div className="flex flex-col items-center">
-            <div class="menuIcon">
+            <div className="menuIcon">
               <img src="/fries.png" />
             </div>
-            <p class="menuItemsText"> hot bites </p>
+            <p className="menuItemsText"> hot bites </p>
           </div>
           <div className="flex flex-col items-center">
-            <div class="menuIcon">
+            <div className="menuIcon">
               <img src="/sandwich.png" />
             </div>
-            <p class="menuItemsText"> sandwiches </p>
+            <p className="menuItemsText"> sandwiches </p>
           </div>
           <div className="flex flex-col items-center">
-            <div class="menuIcon">
+            <div className="menuIcon">
               <img src="/beerCup.png" className="w-2/3 " />
             </div>
-            <p class="menuItemsText"> beer/wine </p>
+            <p className="menuItemsText"> beer/wine </p>
           </div>
         </div>
         <div className="flex justify-center m-16">
@@ -75,9 +73,9 @@ function Home() {
             View Menu{" "}
           </button>
         </div>
-      </div>
+      </div> */}
       {/* board game section */}
-      <div className="w-[100vw] flex my-36">
+      {/* <div className="w-[100vw] flex my-36">
         <div className="w-9/10 flex justify-center align-center gap-x-16">
           <div className="flex flex-col w-1/3 justify-center">
             <h2 className="text-6xl mb-6 font-bold"> Board Games</h2>
@@ -108,7 +106,7 @@ function Home() {
         <div className="flex flex-wrap">
           <img src="/boardGame.jpeg" className="w-60 h-60" />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
