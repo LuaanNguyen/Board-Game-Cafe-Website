@@ -1,6 +1,12 @@
+import { motion, transform } from "framer-motion";
 function Feedback() {
   return (
-    <div className="w-[100vw] h-[100vh] mt-20">
+    <motion.div
+      className="w-[100vw] h-[100vh] mt-20"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.5 } }}
+      final={{ opacity: 0 }}
+    >
       <section className="bg-white ">
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-black ">
@@ -55,16 +61,18 @@ function Feedback() {
                 placeholder="Leave a comment..."
               ></textarea>
             </div>
-            <button
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
               type="submit"
               className="py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-orangeMain sm:w-fit hover:bg-orangeLight focus:ring-4 focus:outline-none focus:ring-primary-300 "
             >
               Send message
-            </button>
+            </motion.button>
           </form>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 }
 
