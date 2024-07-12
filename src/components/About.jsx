@@ -72,14 +72,24 @@ function About() {
           />
         </div>
         <div className="flex m-6 gap-x-6 flex-wrap justify-center">
-          <button className="social-media-buttons">
-            Instagram
-            <AiFillInstagram className="w-8 h-8 ml-2" />
-          </button>
-          <button className="social-media-buttons">
-            Facebook
-            <FaFacebook className="w-8 h-8 ml-2" />
-          </button>
+          <a
+            href="https://www.instagram.com/sipnplaynyc/?hl=en"
+            rel="noopener noreferrer"
+          >
+            <button className="social-media-buttons">
+              Instagram
+              <AiFillInstagram className="w-8 h-8 ml-2" />
+            </button>
+          </a>
+          <a
+            href="https://www.facebook.com/sipnplaynyc/"
+            rel="noopener noreferrer"
+          >
+            <button className="social-media-buttons">
+              Facebook
+              <FaFacebook className="w-8 h-8 ml-2" />
+            </button>
+          </a>
         </div>
       </div>
     </section>
