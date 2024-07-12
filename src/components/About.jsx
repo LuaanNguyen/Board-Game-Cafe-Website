@@ -1,12 +1,18 @@
 import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
+import { motion } from "framer-motion";
 import Franchise from "./Franchise";
 
 function About() {
   return (
     <>
       {" "}
-      <div className="w-full flex flex-col lg:flex-row my-24 lg:my-36">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, transition: { duration: 0.5 } }}
+        final={{ opacity: 0 }}
+        className="w-full flex flex-col lg:flex-row my-24 lg:my-36"
+      >
         <div className="w-full lg:w-9/10 flex flex-col lg:flex-row justify-center items-center gap-x-16">
           <div className="flex flex-col w-full lg:w-1/3 justify-center text-center lg:text-left mb-6 lg:mb-0 max-lg:px-10">
             <h2 className="text-4xl lg:text-6xl mb-6 font-bold"> Our Story</h2>
@@ -20,14 +26,15 @@ function About() {
           </div>
           <div className="w-full lg:w-1/3 max-lg:px-32 max-sm:px-10">
             <img
+              loading="lazy"
               src="/aboutUsCoffee.png"
               className="rounded-3xl w-full"
               alt="Board Games"
             />
           </div>
         </div>
-      </div>
-      <div className="flex flex-col items-center my-16">
+      </motion.div>
+      <motion.div className="flex flex-col items-center my-16">
         <h3 className="text-4xl max-md:text-3xl max-sm:xl max-sm:px-4 font-bold mb-6 lg:mb-12 text-center">
           Follow us on Instagram and Facebook!
         </h3>
@@ -93,7 +100,7 @@ function About() {
             </button>
           </a>
         </div>
-      </div>
+      </motion.div>
       <Franchise />
     </>
   );

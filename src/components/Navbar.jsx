@@ -24,10 +24,10 @@ function Navbar() {
             className="h-[100px] mx-2 bg-transparent"
           ></img>
         </Link>
-        <div className="flex gap-5 items-center">
+        <div className="flex gap-20 items-center">
           <Link
             to="/about"
-            className="hover:bg-orangeLight hover:rounded-full p-2"
+            className="hover:bg-orangeLight hover:rounded-full px-4 py-2"
           >
             About
           </Link>
@@ -45,13 +45,13 @@ function Navbar() {
           </Link> */}
           <Link
             to="https://squareup.com/gift/SWP5P3242C38Q/order"
-            className="hover:bg-orangeLight hover:rounded-full p-2"
+            className="hover:bg-orangeLight hover:rounded-full px-4 py-2"
           >
             Giftcards
           </Link>
           <Link
             to="/feedback"
-            className="hover:bg-orangeLight hover:rounded-full p-2"
+            className="hover:bg-orangeLight hover:rounded-full px-4 py-2"
           >
             Feedback
           </Link>
@@ -64,7 +64,7 @@ function Navbar() {
         </div>
 
         <div className="flex gap-2">
-          <div className="flex items-center justify-center w-32 h-12 rounded-full p-2 border-2 border-gray-700 bg-orangePale hover:bg-orangeVeryPale">
+          <div className="flex items-center justify-center w-32 h-12 rounded-full p-2 border-2 border-gray-700 bg-greenAccent hover:bg-orangeVeryPale">
             <Link to="/menu" className="">
               Menu
             </Link>

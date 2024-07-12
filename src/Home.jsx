@@ -24,21 +24,27 @@ function Home() {
     <section className="w-[100vw] mt-44 max-md:mt-24 max-lg:px-10 px-40">
       <div className="flex max-md:flex-row gap-10 max-md:grid-cols-1 items-center justify-center w-full">
         <div className="max-w-screen-sm text-left">
-          <h1 className="font-bold text-4xl lg:text-7xl mb-2"> Sip & Play </h1>
-          <h2 className="font-bold text-3xl mb-4"> Boardgame Cafe</h2>
+          <h1 className="font-bold text-8xl lg:text-7xl mb-2 text-darkGreenAccent ">
+            {" "}
+            Sip & Play{" "}
+          </h1>
+          <h2 className="font-bold text-3xl mb-4 text-orangeLight">
+            {" "}
+            Boardgame Cafe
+          </h2>
           <p className="font-sans mb-6">
-            Come on in with your friends and family and play boardgames from our
-            collection of over 500+ games! Just $10 a person for 3 hours of
-            gameplay. ($12 a person Friday-Sunday and Holidays)
+            Join us with your friends and family to explore our extensive
+            collection of over 500 board games! For just $10 per person, enjoy 3
+            hours of gameplay (Friday-Sunday and Holidays: $12 per person).
+            While you play, indulge in our selection of bubble tea, coffee,
+            beers, sandwiches, and salads for a delightful experience. To secure
+            your spot, reserve a table for $15 per person, also including 3
+            hours of gameplay
           </p>
-          <p>
-            Play while enjoying bubble tea, coffee, beer sandwiches or salads
-            and have a great time! If you want to guarantee a table, you can
-            make a reservation which is $15 a person for 3 hours of gameplay.
-          </p>
-          <button className="bg-orangeLight px-6 lg:px-8 py-3 lg:py-4 rounded-full mt-6 hover:bg-[#F7E7DC]">
+
+          {/* <button className="bg-orangeLight px-6 lg:px-8 py-3 lg:py-4 rounded-full mt-6 hover:bg-[#F7E7DC]">
             Buy Now
-          </button>
+          </button> */}
         </div>
         <div className="w-[60vw] h-[60vh] max-lg:hidden shadow-2xl rounded-full bg-orangeLight flex  items-center justify-center">
           <Canvas
