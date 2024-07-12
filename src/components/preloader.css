@@ -1,0 +1,18 @@
+/* src/components/Preloader.css */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a42f31; /* Or any other background color */
+  z-index: 9999;
+}
+
+.preloader-gif {
+  width: auto;
+  height: auto;
+}
