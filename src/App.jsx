@@ -7,7 +7,7 @@ import AnimatedBackground from "./components/AnimatedBackground";
 function App() {
   return (
     <section className="home">
-      <Navbar />
+      {/* <Navbar /> */}
       <Home />
       {/* <AnimatedBackground /> */}
       <Footer />
