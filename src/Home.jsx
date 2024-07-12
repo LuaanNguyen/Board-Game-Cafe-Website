@@ -1,6 +1,8 @@
+import AnimatedBackground from "./components/AnimatedBackground";
 function Home() {
   return (
     <section className="w-[80vw] h-[300lvh] lg:mx-24 mt-24">
+      <AnimatedBackground />
       {/* sip and play with image placeholder for 3d boba */}
       <div className="flex items-center justify-center w-[100vw] px-10">
         <div className="max-w-screen-sm">

@@ -39,7 +39,6 @@ function App() {
             <Route path="/press" element={<Press />} />
             <Route path="/reservation" element={<Reservation />} />
           </Routes>
-          <AnimatedBackground />
           <Footer />
         </section>
       )}
