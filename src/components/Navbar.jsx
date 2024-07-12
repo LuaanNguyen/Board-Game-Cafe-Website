@@ -4,6 +4,12 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { LiaTimesSolid } from "react-icons/lia";
+import { motion } from "framer-motion";
+
+const variants = {
+  open: { opacity: 1, x: 0 },
+  closed: { opacity: 0, x: "-100%" },
+};
 
 function Navbar() {
   const pos = useScrollPosition();

@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Home from "./Home";
 import Navbar from "./components/Navbar";
-import AnimatedBackground from "./components/AnimatedBackground";
 import Preloader from "./components/preloader";
 import About from "./components/About";
 import MTGSchedule from "./components/MTGSchedule";
