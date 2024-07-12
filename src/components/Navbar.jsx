@@ -14,14 +14,14 @@ function Navbar() {
       <section
         className={`mt-4 mb-10 mx-32 max-lg:mx-4 rounded-2xl flex justify-between items-center px-6 max-lg:hidden ${
           pos !== 0
-            ? ` bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 shadow-xl`
+            ? ` bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 shadow-xl`
             : ``
         }  z-1`}
       >
         <Link to="/">
           <img
             src="/sipnplay.png"
-            className="h-20 w-20 mx-2 bg-transparent"
+            className="h-[100px] mx-2 bg-transparent"
           ></img>
         </Link>
         <div className="flex gap-2 items-center">
@@ -37,14 +37,14 @@ function Navbar() {
           >
             MTG schedule
           </Link>
-          <Link
+          {/* <Link
             to="/menu"
             className="hover:bg-orangeLight hover:rounded-full p-2"
           >
             Menu
-          </Link>
+          </Link> */}
           <Link
-            to="/giftcards"
+            to="https://squareup.com/gift/SWP5P3242C38Q/order"
             className="hover:bg-orangeLight hover:rounded-full p-2"
           >
             Giftcards
@@ -64,12 +64,12 @@ function Navbar() {
         </div>
 
         <div className="flex gap-2">
-          <div className="flex items-center justify-center w-32 h-12 rounded-full p-2 border-2 border-gray-600 bg-orangePale hover:bg-orangeVeryPale">
+          <div className="flex items-center justify-center w-32 h-12 rounded-full p-2 border-2 border-gray-700 bg-orangePale hover:bg-orangeVeryPale">
             <Link to="/menu" className="">
               Menu
             </Link>
           </div>
-          <div className="flex items-center justify-center w-32 h-12 rounded-full p-2 border-2 border-gray-600 bg-orangeLight hover:bg-orangeVeryPale">
+          <div className="flex items-center justify-center w-32 h-12 rounded-full p-2 border-2 border-gray-700 bg-orangeLight hover:bg-orangeVeryPale">
             <Link to="/reservation">Reservation</Link>
           </div>
         </div>

@@ -1,6 +1,6 @@
 function Home() {
   return (
-    <section className="w-[80vw] h-[300lvh] lg:mx-20 mt-24">
+    <section className="w-[80vw] h-[300lvh] lg:mx-24 mt-24">
       {/* sip and play with image placeholder for 3d boba */}
       <div className="flex items-center justify-center w-[100vw] px-10">
         <div className="max-w-screen-sm">

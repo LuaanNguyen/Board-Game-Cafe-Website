@@ -11,6 +11,7 @@ import Menu from "./components/Menu";
 import Giftcards from "./components/Giftcards";
 import Feedback from "./components/Feedback.jsx";
 import Press from "./components/Press";
+import Reservation from "./components/Reservation.jsx";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -28,7 +29,6 @@ function App() {
       ) : (
         <section className="home">
           <Navbar />
-
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -37,6 +37,7 @@ function App() {
             <Route path="/giftcards" element={<Giftcards />} />
             <Route path="/feedback" element={<Feedback />} />
             <Route path="/press" element={<Press />} />
+            <Route path="/reservation" element={<Reservation />} />
           </Routes>
           <AnimatedBackground />
           <Footer />
