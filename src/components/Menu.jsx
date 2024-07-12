@@ -1,12 +1,7 @@
-import React, { useState, useEffect, useRef, Suspense } from "react";
+/* eslint-disable react/no-unknown-property */
+import { useState, useEffect, useRef, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import {
-  useGLTF,
-  Text,
-  Environment,
-  CameraControls,
-  Html,
-} from "@react-three/drei";
+import { useGLTF, Text, Environment, CameraControls } from "@react-three/drei";
 import { degToRad } from "three/src/math/MathUtils.js";
 import { motion } from "framer-motion";
 
@@ -69,7 +64,10 @@ const Menu = () => {
   return (
     <>
       <Suspense fallback={null}>
-        <Canvas className="mt-32" camera={{ fov: 90, position: [0, 0, 8] }}>
+        <Canvas
+          className="mt-32 h-[100vh]"
+          camera={{ fov: 90, position: [0, 0, 8] }}
+        >
           <CameraControls ref={controls} />
           <mesh ref={meshFitCameraHome} position={[0, 1, 5]} visible={false}>
             <boxGeometry args={[7.5, 5, 2]} />

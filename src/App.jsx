@@ -10,10 +10,7 @@ import Menu from "./components/Menu";
 import Feedback from "./components/Feedback.jsx";
 import Press from "./components/Press";
 
-import { div } from "three/examples/jsm/nodes/Nodes.js";
-
 import Reservation from "./components/Reservation.jsx";
-
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -36,15 +33,14 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/mtgschedule" element={<MTGSchedule />} />
             <Route path="/press" element={<Press />} />
+            <Route path="/menu" element={<Menu />} />
             {/* <Route path="/giftcards" element={<Giftcards />} /> */}
             <Route path="/feedback" element={<Feedback />} />
             <Route path="/press" element={<Press />} />
             <Route path="/reservation" element={<Reservation />} />
           </Routes>
 
-
-          <Footer />
-
+          {window.location.pathname !== "/menu" && <Footer />}
         </section>
       )}
     </Router>
