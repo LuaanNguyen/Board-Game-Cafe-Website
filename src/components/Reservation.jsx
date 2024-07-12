@@ -16,6 +16,10 @@ export default function Reservation() {
         <div className="grid grid-cols-2 gap-10 max-lg:grid-cols-1">
           <div className="flex flex-col gap-5">
             <h1 className="text-4xl font-bold">Reservation Packages</h1>
+            <p className="text-gray-500">
+              For large parties (9+ or more people), please email us at
+              sipnplaynyc@gmail.com to inquire about a reservation.
+            </p>
             <hr className="bg-black w-20"></hr>
             <p>
               We have just started using a new reservation software, Tock!

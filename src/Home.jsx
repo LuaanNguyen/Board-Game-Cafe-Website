@@ -24,7 +24,7 @@ function Home() {
     <section className="w-[100vw] mt-44 max-md:mt-24 max-lg:px-10 px-40">
       <div className="flex max-md:flex-row gap-10 max-md:grid-cols-1 items-center justify-center w-full">
         <div className="max-w-screen-sm text-left">
-          <h1 className="font-bold text-8xl lg:text-7xl mb-2 text-darkGreenAccent ">
+          <h1 className="font-bold text-10xl lg:text-7xl mb-2 text-darkGreenAccent ">
             {" "}
             Sip & Play{" "}
           </h1>
@@ -41,6 +41,8 @@ function Home() {
             your spot, reserve a table for $15 per person, also including 3
             hours of gameplay
           </p>
+
+          <OfficeHours />
 
           {/* <button className="bg-orangeLight px-6 lg:px-8 py-3 lg:py-4 rounded-full mt-6 hover:bg-[#F7E7DC]">
             Buy Now
@@ -127,3 +129,31 @@ Model.propTypes = {
 };
 
 export default Home;
+
+function OfficeHours() {
+  return (
+    <div className="flex flex-row max-md:flex-col gap-8 bg-orangeVeryPale p-6 rounded-xl">
+      <div className="flex flex-col ">
+        <h1 className="font-bold text-gray-600">(New) Hours: </h1>
+        <p>Sunday: 10am-11pm</p>
+        <p>Mon-Thurs: 11am-11pm</p>
+        <p>Fri: 11am-midnight</p>
+        <p>Sat: 10am-midnight</p>
+        <p className="py-4">
+          ***Our kitchen closes 2.5-3 hours before we close!***
+        </p>
+      </div>
+      <div className="flex flex-col">
+        <h1 className="font-bold text-gray-600">Location</h1>
+        <p>471 5th Ave.</p>
+        <p>Brooklyn, NY 11215</p>
+        <p>
+          <strong className="text-gray-600">sipnplaynyc@gmail.com</strong>
+        </p>
+        <p>
+          <strong className="text-gray-600">718-971-1684</strong>
+        </p>
+      </div>
+    </div>
+  );
+}
