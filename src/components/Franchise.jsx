@@ -23,12 +23,13 @@ function Franchise() {
         <SocialMediaLinks />
       </div>
 
-      <iframe
+      <img src="/sipnplaymap.png" className="rounded-2xl"></img>
+      {/* <iframe
         className="w-full h-full rounded-2xl max-md:hidden"
         loading="lazy"
         allowFullScreen
         src={`https://www.google.com/maps/embed/v1/place?q=tempe&key=${GOOGLE_API_KEY}`}
-      ></iframe>
+      ></iframe> */}
     </section>
   );
 }
