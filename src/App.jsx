@@ -22,8 +22,8 @@ function App() {
         <section className="home">
           <Navbar />
           <Home />
-          <AnimatedBackground />
-          <Footer />
+          {/* <AnimatedBackground /> */}
+          {/* <Footer /> */}
         </section>
       )}
     </>
