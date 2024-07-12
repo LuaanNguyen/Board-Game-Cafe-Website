@@ -1,7 +1,7 @@
 function Navbar() {
   return (
-    <nav className="w-full fixed top-0 left-0">
-      <section className="m-10 bg-orangePale rounded-2xl shadow-xl flex justify-between items-center px-6 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border">
+    <nav className="w-full fixed top-0 left-0 z-10">
+      <section className="my-10 mx-24 bg-orangePale rounded-2xl shadow-xl flex justify-between items-center px-6 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10  z-1">
         <a href="/">
           <img src="/sipnplay.png" className="w-20 mx-2 bg-transparent"></img>
         </a>
