@@ -12,13 +12,6 @@
   }
 }
 
-@layer utilities {
-  .glassmorphism-effect {
-    @apply bg-clip-padding backdrop-filter backdrop-blur-sm mx-8 my-4 w-[96vw];
-    background-image: var(--tw-gradient-glass-gradient);
-  }
-}
-
 /* Custom CSS class for Roboto font */
 .roboto-font {
   font-family: "Roboto", sans-serif;
@@ -36,7 +29,7 @@ span {
 /* --------- HOME --------- */
 
 * {
-  @apply bg-white text-black;
+  @apply text-black;
   @apply cursor-default;
 }
 
