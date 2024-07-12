@@ -9,7 +9,11 @@ import MTGSchedule from "./components/MTGSchedule";
 import Menu from "./components/Menu";
 import Feedback from "./components/Feedback.jsx";
 import Press from "./components/Press";
+
+import { div } from "three/examples/jsm/nodes/Nodes.js";
+
 import Reservation from "./components/Reservation.jsx";
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -37,7 +41,10 @@ function App() {
             <Route path="/press" element={<Press />} />
             <Route path="/reservation" element={<Reservation />} />
           </Routes>
+
+
           <Footer />
+
         </section>
       )}
     </Router>

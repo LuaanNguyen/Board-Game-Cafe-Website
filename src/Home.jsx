@@ -1,3 +1,4 @@
+
 /* eslint-disable react/no-unknown-property */
 import { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
@@ -6,6 +7,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+
 
 function Home() {
   const [cursor, setCursor] = useState({ x: 0, y: 0 });
