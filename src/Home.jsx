@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useRef } from "react";
+/* eslint-disable react/no-unknown-property */
+import { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import AnimatedBackground from "./components/AnimatedBackground";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import Franchise from "./components/Franchise";
 
 function Home() {
   const [cursor, setCursor] = useState({ x: 0, y: 0 });
@@ -99,7 +99,9 @@ function Home() {
   );
 }
 
-const Model = ({ cursor }) => {
+//{ cursor }
+
+const Model = () => {
   const gltf = useLoader(GLTFLoader, "./desserts/scene.gltf");
   const modelRef = useRef();
   useFrame(() => {

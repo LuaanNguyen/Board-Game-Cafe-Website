@@ -7,7 +7,6 @@ import Preloader from "./components/preloader";
 import About from "./components/About";
 import MTGSchedule from "./components/MTGSchedule";
 import Menu from "./components/Menu";
-import Giftcards from "./components/Giftcards";
 import Feedback from "./components/Feedback.jsx";
 import Press from "./components/Press";
 import Reservation from "./components/Reservation.jsx";

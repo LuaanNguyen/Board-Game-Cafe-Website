@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Franchise from "./Franchise";
+
 function Feedback() {
   return (
     <>

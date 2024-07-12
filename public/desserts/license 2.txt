@@ -1,0 +1,11 @@
+Model Information:
+* title:	desserts
+* source:	https://sketchfab.com/3d-models/desserts-e18c3a976b8b474fb5648d7012163f52
+* author:	Cookies and Cream (https://sketchfab.com/modelsbyheart)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "desserts" (https://sketchfab.com/3d-models/desserts-e18c3a976b8b474fb5648d7012163f52) by Cookies and Cream (https://sketchfab.com/modelsbyheart) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
