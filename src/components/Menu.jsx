@@ -63,56 +63,55 @@ const Menu = () => {
 
   return (
     <>
-      <Suspense fallback={null}>
-        <Canvas
-          className="mt-32 h-[100vh]"
-          camera={{ fov: 90, position: [0, 0, 8] }}
-        >
-          <CameraControls ref={controls} />
-          <mesh ref={meshFitCameraHome} position={[0, 1, 5]} visible={false}>
-            <boxGeometry args={[7.5, 5, 2]} />
-            <meshBasicMaterial color="orange" transparent opacity={0.5} />
-          </mesh>
-
-          <Text
-            font={"./fonts/Poppins/Poppins-Black.ttf"}
-            position={[-3.3, 0, 3]}
-            rotation-y={degToRad(30)}
-            anchorY={"bottom"}
-            textAlign="center"
-          >
-            SIP & Play {"\n"}
-            MENU
-            <meshBasicMaterial color="#ACD793" />
-          </Text>
-          <Environment preset="sunset" />
-
-          <group rotation-y={degToRad(-25)} position={[3, 0, 0]}>
-            <Model></Model>
-
-            <mesh
-              ref={meshFitCameraStore}
-              position-x={-2.5}
-              position-y={2}
-              position-z={-1}
-              visible={false}
-            >
-              <boxGeometry args={[3, 3, 3]} />
-              <meshBasicMaterial color="red" transparent opacity={0.5} />
+      <section className="h-[100vh]">
+        <Suspense fallback={null}>
+          <Canvas className="mt-32" camera={{ fov: 90, position: [0, 0, 8] }}>
+            <CameraControls ref={controls} />
+            <mesh ref={meshFitCameraHome} position={[0, 1, 5]} visible={false}>
+              <boxGeometry args={[7.5, 5, 2]} />
+              <meshBasicMaterial color="orange" transparent opacity={0.5} />
             </mesh>
-          </group>
-        </Canvas>
-        {showButton && (
-          <motion.button
-            onClick={handleButtonClick}
-            className="absolute top-3/4 left-1/2 transform bg-greenAccent text-white p-4 rounded-lg cursor-pointer w-24 text-center"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            Enter
-          </motion.button>
-        )}
-      </Suspense>
+
+            <Text
+              font={"./fonts/Poppins/Poppins-Black.ttf"}
+              position={[-3.3, 0, 3]}
+              rotation-y={degToRad(30)}
+              anchorY={"bottom"}
+              textAlign="center"
+            >
+              SIP & Play {"\n"}
+              MENU
+              <meshBasicMaterial color="#ACD793" />
+            </Text>
+            <Environment preset="sunset" />
+
+            <group rotation-y={degToRad(-25)} position={[3, 0, 0]}>
+              <Model></Model>
+
+              <mesh
+                ref={meshFitCameraStore}
+                position-x={-2.5}
+                position-y={2}
+                position-z={-1}
+                visible={false}
+              >
+                <boxGeometry args={[3, 3, 3]} />
+                <meshBasicMaterial color="red" transparent opacity={0.5} />
+              </mesh>
+            </group>
+          </Canvas>
+          {showButton && (
+            <motion.button
+              onClick={handleButtonClick}
+              className="absolute top-[85vh] left-[45%] transform bg-orangeLight text-black p-6 rounded-lg cursor-pointer w-46 text-center font-bold border-2 border-gray-700 shadow-lg"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              Enter to view the Menu
+            </motion.button>
+          )}
+        </Suspense>
+      </section>
     </>
   );
 };
