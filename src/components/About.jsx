@@ -31,42 +31,42 @@ function About() {
         </h3>
         <div className="flex flex-wrap justify-center gap-6 w-3/5 max-xl:gap-2 max-sm:w-4/5">
           <img
-            src="/boardGame.jpeg"
+            src="/pic1.jpg"
             className="instagramIcons"
             alt="Instagram and Facebook"
           />
           <img
-            src="/boardGame.jpeg"
+            src="/pic2.jpg"
             className="instagramIcons"
             alt="Instagram and Facebook"
           />
           <img
-            src="/boardGame.jpeg"
+            src="/pic3.jpg"
             className="instagramIcons"
             alt="Instagram and Facebook"
           />
           <img
-            src="/boardGame.jpeg"
+            src="/pic4.jpg"
             className="instagramIcons"
             alt="Instagram and Facebook"
           />
           <img
-            src="/boardGame.jpeg"
+            src="/pic5.jpg"
             className="instagramIcons social-media-hide"
             alt="Instagram and Facebook"
           />
           <img
-            src="/boardGame.jpeg"
+            src="/pic6.jpg"
             className="instagramIcons social-media-hide"
             alt="Instagram and Facebook"
           />
           <img
-            src="/boardGame.jpeg"
+            src="/pic7.jpg"
             className="instagramIcons social-media-hide"
             alt="Instagram and Facebook"
           />
           <img
-            src="/boardGame.jpeg"
+            src="/pic8.jpg"
             className="instagramIcons social-media-hide"
             alt="Instagram and Facebook"
           />
