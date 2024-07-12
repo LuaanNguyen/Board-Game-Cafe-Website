@@ -13,6 +13,7 @@ export default {
         orangePale: "#FFE8C8",
         orangeVeryPale: "#FEFAF6",
         greenAccent: "#ACD793",
+        darkGreenAccent: "#80AF81",
       },
     },
   },
