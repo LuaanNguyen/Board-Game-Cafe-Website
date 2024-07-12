@@ -2,7 +2,6 @@ import { useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import "../Calendar.css"; // Import custom styles
-import { FaCheck } from "react-icons/fa";
 import { CiCircleCheck } from "react-icons/ci";
 
 export default function Reservation() {
@@ -52,7 +51,7 @@ function CafeCalendar() {
 
 function BirthdayPackages() {
   return (
-    <section className="w-[100vw] pt-10 max-md:mb-20">
+    <section className="w-[100vw] pt-10 max-md:mb-20 px-20 max-lg:px-10 max-md:px-4">
       <h1 className="text-4xl font-bold text-center">Birthday Packages</h1>
       <section className="grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 p-10 gap-10">
         <div className="bg-orangePale rounded-2xl p-10 border-2 border-gray-200 shadow-lg text-center">
