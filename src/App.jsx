@@ -11,6 +11,7 @@ import Menu from "./components/Menu";
 import Giftcards from "./components/Giftcards";
 import Feedback from "./components/Feedback.jsx";
 import Press from "./components/Press";
+import { div } from "three/examples/jsm/nodes/Nodes.js";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -37,8 +38,9 @@ function App() {
             <Route path="/feedback" element={<Feedback />} />
             <Route path="/press" element={<Press />} />
           </Routes>
-          <AnimatedBackground />
-          <Footer />
+
+          {/* <AnimatedBackground /> */}
+          {/* <Footer /> */}
         </section>
       )}
     </Router>
