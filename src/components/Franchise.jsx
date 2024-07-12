@@ -1,6 +1,6 @@
 import SocialMediaLinks from "../SocialMediaLinks";
 
-const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
+//const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
 
 function Franchise() {
   return (

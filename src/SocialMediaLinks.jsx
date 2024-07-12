@@ -1,9 +1,6 @@
-import { FaLinkedin } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaFacebookSquare } from "react-icons/fa";
-
 import { CgWebsite } from "react-icons/cg";
-import { FaDiscord } from "react-icons/fa6";
 
 const socialMediaLinks = [
   { href: "https://sipnplaynyc.com", icon: <CgWebsite /> },

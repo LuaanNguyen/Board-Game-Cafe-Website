@@ -84,6 +84,7 @@ function About() {
           <a
             href="https://www.instagram.com/sipnplaynyc/?hl=en"
             rel="noopener noreferrer"
+            target="_blank"
           >
             <button className="social-media-buttons">
               Instagram
@@ -93,6 +94,7 @@ function About() {
           <a
             href="https://www.facebook.com/sipnplaynyc/"
             rel="noopener noreferrer"
+            target="_blank"
           >
             <button className="social-media-buttons">
               Facebook

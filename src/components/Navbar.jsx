@@ -46,6 +46,7 @@ function Navbar() {
           <Link
             to="https://squareup.com/gift/SWP5P3242C38Q/order"
             className="hover:bg-orangeLight hover:rounded-full px-4 py-2"
+            target="_blank"
           >
             Giftcards
           </Link>
@@ -58,6 +59,7 @@ function Navbar() {
           <Link
             to="https://docs.google.com/spreadsheets/d/1-TOvwUh-ziCB6QmLYvQlxtXuBd-aGiiO72GWAasby8o/edit"
             className="hover:bg-orangeLight hover:rounded-full p-2"
+            target="_blank"
           >
             Board Games
           </Link>

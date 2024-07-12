@@ -43,7 +43,7 @@ a:hover {
 
 /* --------- SOCIAL MEDIA LINKS --------- */
 .social-media-links {
-  @apply flex gap-4 text-3xl bg-white rounded-lg py-4 px-12 text-black justify-center max-w-80 z-10;
+  @apply flex gap-4 rounded-full text-3xl bg-white py-4 px-6 text-black justify-center max-w-80 z-10;
 }
 
 /*Start Animations*/
