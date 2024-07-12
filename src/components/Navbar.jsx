@@ -24,7 +24,7 @@ function Navbar() {
             className="h-[100px] mx-2 bg-transparent"
           ></img>
         </Link>
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-5 items-center">
           <Link
             to="/about"
             className="hover:bg-orangeLight hover:rounded-full p-2"
