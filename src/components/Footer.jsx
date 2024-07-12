@@ -3,8 +3,8 @@ import SocialMediaLinks from "../SocialMediaLinks";
 function Footer() {
   return (
     <footer className="flex flex-col w-[100vw] h-[80vh] items-center justify-center">
-      <section className="p-8 max-md:p-4 bg-orangePale w-[70%] max-md:w-[100%] h-[90%] max-md:rounded-none rounded-2xl sm:mb-10 shadow-lg grid grid-cols-2 max-lg:grid-cols-1 max-md:border-0 border-4 border-orangeVeryPale">
-        <div className="flex flex-col bg-orangePale justify-between max-md:items-center max-md:text-center  p-10 gap-5 max-md:p-2">
+      <section className="p-8 max-md:p-4 bg-orangeLight w-[70%] max-md:w-[100%] h-[90%] max-md:rounded-none rounded-2xl sm:mb-10 shadow-lg grid grid-cols-2 max-lg:grid-cols-1 max-md:border-0 border-4 border-orangeVeryPale">
+        <div className="flex flex-col  justify-between max-md:items-center max-md:text-center  p-10 gap-5 max-md:p-2">
           <iframe
             className="w-full h-full rounded-2xl sm:hidden"
             loading="lazy"
@@ -12,10 +12,10 @@ function Footer() {
             src="https://www.google.com/maps/embed/v1/place?q=tempe&key=AIzaSyALN2fUL0Wx_CgtyGlXH5hR_s45DZH7rU0"
           ></iframe>
 
-          <h1 className="text-5xl max-md:text-2xl font-semibold bg-orangePale">
+          <h1 className="text-5xl max-md:text-2xl font-semibold ">
             Apply for Franchise
           </h1>
-          <p className="text-gray-800 bg-orangePale">
+          <p className="text-gray-800 ">
             Contact our Franchise Team. Be sure to choose FRANCHISE as your
             Subject and write to us. Our Franchise team will be in touch
             shortly.

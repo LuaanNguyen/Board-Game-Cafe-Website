@@ -84,7 +84,7 @@ a:hover {
     transform: scale3d(0.3, 0.3, 0.3);
   }
   50% {
-    opacity: 1;
+    opacity: 0.5;
   }
 }
 /*End Animations*/
@@ -129,6 +129,7 @@ a:hover {
   height: 20px;
   animation-delay: 2s;
   animation-duration: 12s;
+  background: rgb(90, 90, 90);
 }
 
 .circles li:nth-child(3) {
@@ -136,6 +137,7 @@ a:hover {
   width: 20px;
   height: 20px;
   animation-delay: 4s;
+  background: rgb(90, 90, 90);
 }
 
 .circles li:nth-child(4) {
@@ -144,6 +146,7 @@ a:hover {
   height: 60px;
   animation-delay: 0s;
   animation-duration: 18s;
+  background: rgb(90, 90, 90);
 }
 
 .circles li:nth-child(5) {
@@ -151,6 +154,7 @@ a:hover {
   width: 20px;
   height: 20px;
   animation-delay: 0s;
+  background: rgb(90, 90, 90);
 }
 
 .circles li:nth-child(6) {
