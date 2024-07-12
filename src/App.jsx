@@ -9,10 +9,9 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate a loading time with a timeout
     setTimeout(() => {
       setLoading(false);
-    }, 2000); // Adjust the timeout duration as needed
+    }, 3000);
   }, []);
 
   return (
@@ -23,7 +22,7 @@ function App() {
         <section className="home">
           <Navbar />
           <Home />
-          {/* <AnimatedBackground /> */}
+          <AnimatedBackground />
           <Footer />
         </section>
       )}
