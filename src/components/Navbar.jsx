@@ -4,12 +4,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { LiaTimesSolid } from "react-icons/lia";
-import { motion } from "framer-motion";
-
-const variants = {
-  open: { opacity: 1, x: 0 },
-  closed: { opacity: 0, x: "-100%" },
-};
 
 function Navbar() {
   const pos = useScrollPosition();
@@ -37,12 +31,12 @@ function Navbar() {
           >
             About
           </Link>
-          <Link
+          {/* <Link
             to="/mtgschedule"
             className="hover:bg-orangeLight hover:rounded-full p-2"
           >
             MTG schedule
-          </Link>
+          </Link> */}
           {/* <Link
             to="/menu"
             className="hover:bg-orangeLight hover:rounded-full p-2"
@@ -61,12 +55,12 @@ function Navbar() {
           >
             Feedback
           </Link>
-          <Link
+          {/* <Link
             to="/press"
             className="hover:bg-orangeLight hover:rounded-full p-2"
           >
             Press
-          </Link>
+          </Link> */}
         </div>
 
         <div className="flex gap-2">

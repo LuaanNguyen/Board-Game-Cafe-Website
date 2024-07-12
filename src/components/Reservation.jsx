@@ -4,6 +4,7 @@ import "react-calendar/dist/Calendar.css";
 import "../Calendar.css"; // Import custom styles
 import { CiCircleCheck } from "react-icons/ci";
 import { motion } from "framer-motion";
+import Franchise from "./Franchise";
 
 export default function Reservation() {
   return (

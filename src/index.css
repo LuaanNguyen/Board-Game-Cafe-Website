@@ -37,9 +37,9 @@ a:hover {
   @apply cursor-pointer;
 }
 
-.home {
+/* .home {
   @apply w-[100vw] h-[100vh] bg-white;
-}
+} */
 
 /* --------- SOCIAL MEDIA LINKS --------- */
 .social-media-links {
