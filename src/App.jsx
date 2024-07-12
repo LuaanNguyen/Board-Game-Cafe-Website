@@ -28,6 +28,7 @@ function App() {
       ) : (
         <section className="home">
           <Navbar />
+
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -39,6 +40,7 @@ function App() {
           </Routes>
           <AnimatedBackground />
           <Footer />
+
         </section>
       )}
     </Router>

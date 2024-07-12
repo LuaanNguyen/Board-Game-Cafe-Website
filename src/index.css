@@ -211,3 +211,15 @@ a:hover {
 /*
 -- End BackGround Animation 
 */
+
+.menuItemsText {
+  font-size: 30px;
+}
+
+.menuIcon {
+  @apply flex items-center justify-center bg-[#F7E7DC] w-48 h-48 rounded-full p-1 mb-4;
+}
+
+.menuIcon:hover {
+  @apply bg-orangeLight;
+}
