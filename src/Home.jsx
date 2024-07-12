@@ -1,5 +1,7 @@
+
 import AnimatedBackground from "./components/AnimatedBackground";
 import MenuItems from "./components/menuItems";
+
 
 function Home() {
   return (
