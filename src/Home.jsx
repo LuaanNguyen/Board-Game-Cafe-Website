@@ -24,7 +24,7 @@ function Home() {
     <section className="w-[100vw] mt-44 max-md:mt-24 max-lg:px-10 px-40">
       <div className="flex max-md:flex-row gap-10 max-md:grid-cols-1 items-center justify-center w-full">
         <div className="max-w-screen-sm text-left">
-          <h1 className="font-bold text-10xl lg:text-7xl mb-2 text-darkGreenAccent ">
+          <h1 className="font-bold text-8xl max-md:text-6xl mb-2 text-darkGreenAccent ">
             {" "}
             Sip & Play{" "}
           </h1>

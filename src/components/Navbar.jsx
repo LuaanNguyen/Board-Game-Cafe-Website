@@ -24,7 +24,7 @@ function Navbar() {
             className="h-[100px] mx-2 bg-transparent"
           ></img>
         </Link>
-        <div className="flex gap-20 items-center">
+        <div className="flex gap-10 items-center">
           <Link
             to="/about"
             className="hover:bg-orangeLight hover:rounded-full px-4 py-2"
@@ -38,10 +38,10 @@ function Navbar() {
             MTG schedule
           </Link> */}
           {/* <Link
-            to="/menu"
+            to="/press"
             className="hover:bg-orangeLight hover:rounded-full p-2"
           >
-            Menu
+            Press
           </Link> */}
           <Link
             to="https://squareup.com/gift/SWP5P3242C38Q/order"
@@ -59,7 +59,7 @@ function Navbar() {
             to="https://docs.google.com/spreadsheets/d/1-TOvwUh-ziCB6QmLYvQlxtXuBd-aGiiO72GWAasby8o/edit"
             className="hover:bg-orangeLight hover:rounded-full p-2"
           >
-            Boardgames
+            Board Games
           </Link>
         </div>
 
@@ -109,16 +109,7 @@ function OpenedMobileNavbar() {
         About
       </Link>
       <Link
-        to="/mtgschedule"
-        className="hover:bg-orangeLight hover:rounded-lg p-2"
-      >
-        MTG schedule
-      </Link>
-      <Link to="/menu" className="hover:bg-orangeLight hover:rounded-lg p-2">
-        Menu
-      </Link>
-      <Link
-        to="/giftcards"
+        to="https://squareup.com/gift/SWP5P3242C38Q/order"
         className="hover:bg-orangeLight hover:rounded-lg p-2"
       >
         Giftcards
@@ -129,8 +120,11 @@ function OpenedMobileNavbar() {
       >
         Feedback
       </Link>
-      <Link to="/press" className="hover:bg-orangeLight hover:rounded-lg p-2">
-        Press
+      <Link
+        to="https://docs.google.com/spreadsheets/d/1-TOvwUh-ziCB6QmLYvQlxtXuBd-aGiiO72GWAasby8o/edit"
+        className="hover:bg-orangeLight hover:rounded-lg p-2"
+      >
+        Board Games
       </Link>
       <div className="flex gap-2 items-center justify-center">
         <div className="flex items-center justify-center w-32 h-12 rounded-full p-2 border-2 border-gray-600 bg-orangePale hover:bg-orangeVeryPale">
