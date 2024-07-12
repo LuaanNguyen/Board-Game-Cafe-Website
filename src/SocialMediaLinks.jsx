@@ -6,14 +6,9 @@ import { CgWebsite } from "react-icons/cg";
 import { FaDiscord } from "react-icons/fa6";
 
 const socialMediaLinks = [
-  { href: "https://thesoda.io/", icon: <CgWebsite /> },
-  { href: "https://www.linkedin.com/company/thesoda/", icon: <FaLinkedin /> },
-  { href: "https://www.instagram.com/soda.asu/", icon: <RiInstagramFill /> },
-  {
-    href: "https://discord.gg/the-software-developers-association-762811961238618122",
-    icon: <FaDiscord />,
-  },
-  { href: "https://www.facebook.com/SoDAASU/", icon: <FaFacebookSquare /> },
+  { href: "https://sipnplaynyc.com", icon: <CgWebsite /> },
+  { href: "https://www.instagram.com/sipnplaynyc/", icon: <RiInstagramFill /> },
+  { href: "https://www.facebook.com/sipnplaynyc/", icon: <FaFacebookSquare /> },
 ];
 
 export default function SocialMediaLinks() {
