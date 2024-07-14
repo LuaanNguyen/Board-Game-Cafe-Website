@@ -66,14 +66,16 @@ function Navbar() {
         </div>
 
         <div className="flex gap-2">
-          <div className="flex items-center justify-center w-32 h-12 rounded-full p-2 border-2 border-gray-700 bg-orangePale hover:bg-orangeVeryPale">
-            <Link to="/menu" className="">
+          <Link to="/menu" className="">
+            <div className="cursor-pointer flex items-center justify-center w-32 h-12 rounded-full p-2 border-2 border-gray-700 bg-orangePale hover:bg-orangeVeryPale">
               Menu
-            </Link>
-          </div>
-          <div className="flex items-center justify-center w-32 h-12 rounded-full p-2 border-2 border-gray-700 bg-orangeLight hover:bg-orangeVeryPale">
-            <Link to="/reservation">Reservation</Link>
-          </div>
+            </div>
+          </Link>
+          <Link to="/reservation">
+            <div className="cursor-pointer flex items-center justify-center w-32 h-12 rounded-full p-2 border-2 border-gray-700 bg-orangeLight hover:bg-orangeVeryPale">
+              Reservation
+            </div>
+          </Link>
         </div>
       </section>
       {/*Mobile Navigation*/}
