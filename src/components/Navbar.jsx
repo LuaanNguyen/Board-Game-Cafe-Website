@@ -100,31 +100,42 @@ function MobileNavbar({ setIsOpen, isOpen }) {
             <img src="/sipnplay.png" className="w-16 bg-transparent"></img>
           </Link>
         </div>
-        {isOpen ? <OpenedMobileNavbar /> : <></>}
+        {isOpen ? (
+          <OpenedMobileNavbar setIsOpen={setIsOpen} isOpen={isOpen} />
+        ) : (
+          <></>
+        )}
       </section>
     </nav>
   );
 }
 
-function OpenedMobileNavbar() {
+function OpenedMobileNavbar({ setIsOpen, isOpen }) {
   return (
     <div className="w-full flex flex-col text-left gap-2 text-lg font-bold pt-2 pb-5">
-      <Link to="/about" className="hover:bg-orangeLight hover:rounded-lg p-2">
+      <Link
+        to="/about"
+        className="hover:bg-orangeLight hover:rounded-lg p-2"
+        onClick={() => setIsOpen(!isOpen)}
+      >
         About
       </Link>
       <Link
+        onClick={() => setIsOpen(!isOpen)}
         to="https://squareup.com/gift/SWP5P3242C38Q/order"
         className="hover:bg-orangeLight hover:rounded-lg p-2"
       >
         Giftcards
       </Link>
       <Link
+        onClick={() => setIsOpen(!isOpen)}
         to="/feedback"
         className="hover:bg-orangeLight hover:rounded-lg p-2"
       >
         Feedback
       </Link>
       <Link
+        onClick={() => setIsOpen(!isOpen)}
         to="https://docs.google.com/spreadsheets/d/1-TOvwUh-ziCB6QmLYvQlxtXuBd-aGiiO72GWAasby8o/edit"
         className="hover:bg-orangeLight hover:rounded-lg p-2"
       >
@@ -132,12 +143,14 @@ function OpenedMobileNavbar() {
       </Link>
       <div className="flex gap-2 items-center justify-center">
         <div className="flex items-center justify-center w-32 h-12 rounded-full p-2 border-2 border-gray-600 bg-orangePale hover:bg-orangeVeryPale">
-          <Link to="/menu" className="">
+          <Link onClick={() => setIsOpen(!isOpen)} to="/menu" className="">
             Menu
           </Link>
         </div>
         <div className="flex items-center justify-center w-32 h-12 rounded-full p-2 border-2 border-gray-600 bg-orangeLight hover:bg-orangeVeryPale">
-          <Link to="/reservation">Reservation</Link>
+          <Link onClick={() => setIsOpen(!isOpen)} to="/reservation">
+            Reservation
+          </Link>
         </div>
       </div>
     </div>
@@ -148,6 +161,11 @@ export default Navbar;
 
 MobileNavbar.propTypes = {
   pos: PropTypes.any.isRequired,
+  setIsOpen: PropTypes.func.isRequired,
+  isOpen: PropTypes.bool.isRequired,
+};
+
+OpenedMobileNavbar.propTypes = {
   setIsOpen: PropTypes.func.isRequired,
   isOpen: PropTypes.bool.isRequired,
 };
