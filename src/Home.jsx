@@ -1,4 +1,3 @@
-
 /* eslint-disable react/no-unknown-property */
 import { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
@@ -7,7 +6,6 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-
 
 function Home() {
   const [cursor, setCursor] = useState({ x: 0, y: 0 });
@@ -23,7 +21,7 @@ function Home() {
   }, []);
 
   return (
-    <section className="w-[100vw] mt-44 max-md:mt-24 max-lg:px-10 px-40">
+    <section className="w-[100vw] max-md:h-[120vh] mt-44 max-md:mt-24 max-lg:px-10 px-40">
       <div className="flex max-md:flex-row gap-10 max-md:grid-cols-1 items-center justify-center w-full">
         <div className="max-w-screen-sm text-left">
           <h1 className="font-bold text-8xl max-md:text-6xl mb-2 text-darkGreenAccent ">
