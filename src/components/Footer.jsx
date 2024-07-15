@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <footer className="bg-white flex flex-col w-[100vw] items-center justify-center">
-      <section className="px-10 w-[100vw] flex sm:pt-20 pt-6 pb-6 justify-between max-md:justify-center">
+    <footer className="bg-white flex flex-col w-[100vw] items-center justify-center border-t-2 mt-10 border-greenAccent">
+      <section className="px-10 w-[100vw] flex pt-6 pb-6 justify-between max-md:justify-center">
         <h4 className="text-gray-500  text-center">
           ©2024 by Sip & Play. All Rights Reserved.
         </h4>

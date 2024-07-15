@@ -45,14 +45,14 @@ function Navbar() {
           </Link> */}
           <Link
             to="https://squareup.com/gift/SWP5P3242C38Q/order"
-            className="hover:bg-orangeLight hover:rounded-full px-4 py-2"
+            className="hover:bg-orangeLight  hover:rounded-full px-4 py-2"
             target="_blank"
           >
             Giftcards
           </Link>
           <Link
             to="/feedback"
-            className="hover:bg-orangeLight hover:rounded-full px-4 py-2"
+            className="hover:bg-orangeLight   hover:rounded-full px-4 py-2"
           >
             Feedback
           </Link>

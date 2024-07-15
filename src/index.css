@@ -105,6 +105,12 @@ a:hover {
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  .circles {
+    height: 140%;
+  }
+}
+
 .circles li {
   position: absolute;
   display: block;
