@@ -103,7 +103,7 @@ const Menu = () => {
           {showButton && (
             <motion.button
               onClick={handleButtonClick}
-              className="absolute top-[85vh] left-[45%] transform bg-orangeLight text-black p-6 rounded-lg cursor-pointer w-46 text-center font-bold border-2 border-gray-700 shadow-lg"
+              className="max-md:top-[85vh] max-md:left-[20%] max-md:p-3 absolute top-[85vh] left-[43%] transform bg-orangeLight text-black p-6 rounded-lg cursor-pointer w-46 text-center font-bold border-2 border-gray-700 shadow-lg"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
