@@ -37,9 +37,9 @@ a:hover {
   @apply cursor-pointer;
 }
 
-/* .home {
-  @apply w-[100vw] h-[100vh] bg-white;
-} */
+.home {
+  @apply w-[100vw] h-[100vh] bg-white flex justify-between flex-col;
+}
 
 /* --------- SOCIAL MEDIA LINKS --------- */
 .social-media-links {
