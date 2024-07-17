@@ -6,6 +6,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [cursor, setCursor] = useState({ x: 0, y: 0 });
@@ -32,19 +33,15 @@ function Home() {
             {" "}
             Boardgame Cafe
           </h2>
-          <p className="font-sans mb-6">
+          <p className="font-sans mb-6 text-lg">
             Join us with your friends and family to explore our extensive
             collection of over 500 board games! For just $10 per person, enjoy 3
             hours of gameplay (Friday-Sunday and Holidays: $12 per person).
-            While you play, indulge in our selection of bubble tea, coffee,
-            beers, sandwiches, and salads for a delightful experience. To secure
-            your spot, reserve a table for $15 per person, also including 3
-            hours of gameplay
           </p>
 
-          {/* <button className="bg-orangeLight px-6 lg:px-8 py-3 lg:py-4 rounded-full mt-6 hover:bg-[#F7E7DC]">
-            Buy Now
-          </button> */}
+          <button className="bg-orangeLight px-6 lg:px-8 py-3 lg:py-4 rounded-full mt-6 hover:bg-[#F7E7DC] relative z-10">
+            <Link to="/about">Learn More</Link>
+          </button>
         </div>
         <div className="h-[30vw] aspect-square max-lg:hidden shadow-2xl rounded-full bg-orangeLight flex  items-center justify-center">
           <Canvas
@@ -62,7 +59,6 @@ function Home() {
           </Canvas>
         </div>
       </div>
-      <OfficeHours />
 
       {/* <div className="my-16 lg:my-32 text-2xl lg:text-4xl">
         <h3 className="text-center font-bold mb-12 lg:mb-24">
@@ -128,40 +124,3 @@ Model.propTypes = {
 };
 
 export default Home;
-
-function OfficeHours() {
-  return (
-    <section className="flex gap-4 flex-col mt-44 items-center">
-      <h1 className="font-bold text-4xl text-center m-6"> Opening Hours </h1>
-
-      <section className="flex gap-4 flex-col max-w-[1115px]">
-        <div className="hoursChildren">
-          <div className="hoursTextContainer">
-            <h2 className="day"> Monday - Thursday </h2>
-            <p className="text-slate-500"> 11am - 11pm</p>
-          </div>
-        </div>
-        <div className="flex flex-row gap-4 bg-orangeVeryPale max-md:flex-col">
-          <div className="hoursChildren">
-            <div className="hoursTextContainer">
-              <h2 className="day"> FRIDAY</h2>
-              <p className="text-slate-500"> 11:00am - Midnight</p>
-            </div>
-          </div>
-          <div className="hoursChildren">
-            <div className="hoursTextContainer">
-              <h2 className="day"> SATURDAY</h2>
-              <p className="text-slate-500"> 10:00am - Midnight</p>
-            </div>
-          </div>{" "}
-          <div className="hoursChildren">
-            <div className="hoursTextContainer">
-              <h2 className="day"> SUNDAY</h2>
-              <p className="text-slate-500"> 10:00am - 11:00pm</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </section>
-  );
-}

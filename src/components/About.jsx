@@ -2,6 +2,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Franchise from "./Franchise";
+import OfficeHours from "./Hours";
 
 function About() {
   return (
@@ -103,6 +104,7 @@ function About() {
           </a>
         </div>
       </motion.div>
+      <OfficeHours />
       <Franchise />
     </>
   );
