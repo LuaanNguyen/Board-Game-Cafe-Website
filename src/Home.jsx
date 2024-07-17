@@ -42,8 +42,6 @@ function Home() {
             hours of gameplay
           </p>
 
-          <OfficeHours />
-
           {/* <button className="bg-orangeLight px-6 lg:px-8 py-3 lg:py-4 rounded-full mt-6 hover:bg-[#F7E7DC]">
             Buy Now
           </button> */}
@@ -64,6 +62,7 @@ function Home() {
           </Canvas>
         </div>
       </div>
+      <OfficeHours />
 
       {/* <div className="my-16 lg:my-32 text-2xl lg:text-4xl">
         <h3 className="text-center font-bold mb-12 lg:mb-24">
@@ -132,28 +131,37 @@ export default Home;
 
 function OfficeHours() {
   return (
-    <div className="flex flex-row max-md:flex-col gap-8 bg-orangeVeryPale p-6 rounded-xl">
-      <div className="flex flex-col ">
-        <h1 className="font-bold text-gray-600">(New) Hours: </h1>
-        <p>Sunday: 10am-11pm</p>
-        <p>Mon-Thurs: 11am-11pm</p>
-        <p>Fri: 11am-midnight</p>
-        <p>Sat: 10am-midnight</p>
-        <p className="py-4">
-          ***Our kitchen closes 2.5-3 hours before we close!***
-        </p>
-      </div>
-      <div className="flex flex-col">
-        <h1 className="font-bold text-gray-600">Location</h1>
-        <p>471 5th Ave.</p>
-        <p>Brooklyn, NY 11215</p>
-        <p>
-          <strong className="text-gray-600">sipnplaynyc@gmail.com</strong>
-        </p>
-        <p>
-          <strong className="text-gray-600">718-971-1684</strong>
-        </p>
-      </div>
-    </div>
+    <section className="flex gap-4 flex-col mt-44 items-center">
+      <h1 className="font-bold text-4xl text-center m-6"> Opening Hours </h1>
+
+      <section className="flex gap-4 flex-col max-w-[1115px]">
+        <div className="hoursChildren">
+          <div className="hoursTextContainer">
+            <h2 className="day"> Monday - Thursday </h2>
+            <p className="text-slate-500"> 11am - 11pm</p>
+          </div>
+        </div>
+        <div className="flex flex-row gap-4 bg-orangeVeryPale max-md:flex-col">
+          <div className="hoursChildren">
+            <div className="hoursTextContainer">
+              <h2 className="day"> FRIDAY</h2>
+              <p className="text-slate-500"> 11:00am - Midnight</p>
+            </div>
+          </div>
+          <div className="hoursChildren">
+            <div className="hoursTextContainer">
+              <h2 className="day"> SATURDAY</h2>
+              <p className="text-slate-500"> 10:00am - Midnight</p>
+            </div>
+          </div>{" "}
+          <div className="hoursChildren">
+            <div className="hoursTextContainer">
+              <h2 className="day"> SUNDAY</h2>
+              <p className="text-slate-500"> 10:00am - 11:00pm</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
   );
 }

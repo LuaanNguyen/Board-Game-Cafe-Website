@@ -241,3 +241,15 @@ a:hover {
 .social-media-hide {
   @apply max-lg:hidden;
 }
+
+.hoursChildren {
+  @apply flex-1 border-2 py-4 px-16 rounded-2xl min-w-fit max-xl:px-8 max-md:px-32 max-sm:px-12;
+}
+
+.hoursTextContainer {
+  @apply flex flex-col justify-center items-center;
+}
+
+.day {
+  @apply font-bold max-sm:text-sm;
+}
