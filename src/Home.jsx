@@ -6,6 +6,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [cursor, setCursor] = useState({ x: 0, y: 0 });
@@ -32,26 +33,20 @@ function Home() {
             {" "}
             Boardgame Cafe
           </h2>
-          <p className="font-sans mb-6">
+          <p className="font-sans mb-6 text-lg">
             Join us with your friends and family to explore our extensive
             collection of over 500 board games! For just $10 per person, enjoy 3
             hours of gameplay (Friday-Sunday and Holidays: $12 per person).
-            While you play, indulge in our selection of bubble tea, coffee,
-            beers, sandwiches, and salads for a delightful experience. To secure
-            your spot, reserve a table for $15 per person, also including 3
-            hours of gameplay
           </p>
 
-          <OfficeHours />
-
-          {/* <button className="bg-orangeLight px-6 lg:px-8 py-3 lg:py-4 rounded-full mt-6 hover:bg-[#F7E7DC]">
-            Buy Now
-          </button> */}
+          <button className="bg-orangeLight px-6 lg:px-8 py-3 lg:py-4 rounded-full mt-6 hover:bg-[#F7E7DC] relative z-10">
+            <Link to="/about">Learn More</Link>
+          </button>
         </div>
-        <div className="w-[60vw] h-[60vh] max-lg:hidden shadow-2xl rounded-full bg-orangeLight flex  items-center justify-center">
+        <div className="h-[30vw] aspect-square max-lg:hidden shadow-2xl rounded-full bg-orangeLight flex  items-center justify-center">
           <Canvas
             camera={{
-              position: [0, 10, 10],
+              position: [2, 10, 12],
               fov: 75,
               rotation: [-Math.PI / 4, 0, 0],
             }}
@@ -129,31 +124,3 @@ Model.propTypes = {
 };
 
 export default Home;
-
-function OfficeHours() {
-  return (
-    <div className="flex flex-row max-md:flex-col gap-8 bg-orangeVeryPale p-6 rounded-xl">
-      <div className="flex flex-col ">
-        <h1 className="font-bold text-gray-600">(New) Hours: </h1>
-        <p>Sunday: 10am-11pm</p>
-        <p>Mon-Thurs: 11am-11pm</p>
-        <p>Fri: 11am-midnight</p>
-        <p>Sat: 10am-midnight</p>
-        <p className="py-4">
-          ***Our kitchen closes 2.5-3 hours before we close!***
-        </p>
-      </div>
-      <div className="flex flex-col">
-        <h1 className="font-bold text-gray-600">Location</h1>
-        <p>471 5th Ave.</p>
-        <p>Brooklyn, NY 11215</p>
-        <p>
-          <strong className="text-gray-600">sipnplaynyc@gmail.com</strong>
-        </p>
-        <p>
-          <strong className="text-gray-600">718-971-1684</strong>
-        </p>
-      </div>
-    </div>
-  );
-}
