@@ -48,10 +48,10 @@ function Home() {
             Buy Now
           </button> */}
         </div>
-        <div className="w-[60vw] h-[60vh] max-lg:hidden shadow-2xl rounded-full bg-orangeLight flex  items-center justify-center">
+        <div className="h-[30vw] aspect-square max-lg:hidden shadow-2xl rounded-full bg-orangeLight flex  items-center justify-center">
           <Canvas
             camera={{
-              position: [0, 10, 10],
+              position: [2, 10, 12],
               fov: 75,
               rotation: [-Math.PI / 4, 0, 0],
             }}
