@@ -9,8 +9,8 @@ import MTGSchedule from "./components/MTGSchedule";
 import Menu from "./components/Menu";
 import Feedback from "./components/Feedback.jsx";
 import Press from "./components/Press";
-
 import Reservation from "./components/Reservation.jsx";
+import BoardGames from "./components/BoardGames.jsx";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -38,6 +38,7 @@ function App() {
             <Route path="/feedback" element={<Feedback />} />
             <Route path="/press" element={<Press />} />
             <Route path="/reservation" element={<Reservation />} />
+            <Route path="/boardgames" element={<BoardGames />} />
           </Routes>
 
           {window.location.pathname !== "/menu" && <Footer />}

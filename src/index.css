@@ -253,3 +253,26 @@ a:hover {
 .day {
   @apply font-bold max-sm:text-sm;
 }
+
+.gradientText {
+  background-image: linear-gradient(
+    to right,
+    #ffbb00,
+    #d4bc00,
+    #a5bc00,
+    #6fb900,
+    #0eb400
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.gradientButton {
+  @apply px-8 py-4 rounded-full border-[#8A8A8A] border;
+}
+
+.gradientButton:hover {
+  -webkit-box-shadow: 4px 4px 84px 1px
+    linear-gradient(to right, #ffbb00, #d4bc00, #a5bc00, #6fb900, #0eb400);
+  box-shadow: 4px 4px 84px 1px #fca600;
+}
