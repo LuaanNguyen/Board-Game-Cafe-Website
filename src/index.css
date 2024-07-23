@@ -268,11 +268,15 @@ a:hover {
 }
 
 .gradientButton {
+  box-sizing: border-box;
   @apply px-8 py-4 rounded-full border-[#8A8A8A] border;
 }
 
 .gradientButton:hover {
+  box-sizing: border-box;
   -webkit-box-shadow: 4px 4px 84px 1px
     linear-gradient(to right, #ffbb00, #d4bc00, #a5bc00, #6fb900, #0eb400);
-  box-shadow: 4px 4px 84px 1px #fca600;
+  box-shadow: 4px 4px 84px 1px #ffbb00;
+
+  @apply text-white bg-orangeLight;
 }

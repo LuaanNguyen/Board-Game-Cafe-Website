@@ -22,7 +22,13 @@ export default function BoardGames() {
           </div>
           <div className="flex justify-center">
             {" "}
-            <button className="gradientButton relative z-3">View Games</button>
+            <a
+              className="gradientButton relative z-3"
+              href="https://docs.google.com/spreadsheets/d/1-TOvwUh-ziCB6QmLYvQlxtXuBd-aGiiO72GWAasby8o/edit?gid=0#gid=0"
+              target="_blank"
+            >
+              View Games{" "}
+            </a>
           </div>
         </div>
       </div>
