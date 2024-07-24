@@ -21,7 +21,7 @@ function Navbar() {
         <Link to="/">
           <img
             src="/sipnplay.png"
-            className="h-[100px] mx-2 bg-transparent"
+            className="h-[100px] mx-2 bg-transparent min-w-[100px]"
           ></img>
         </Link>
         <div className="flex gap-10 items-center">
