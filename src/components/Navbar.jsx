@@ -10,7 +10,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full fixed top-0 left-0 z-10">
+    <nav className="w-full fixed top-0 left-0 z-20">
       <section
         className={`mt-4 mb-10 mx-32 max-lg:mx-4 rounded-2xl flex justify-between items-center px-6 max-lg:hidden ${
           pos !== 0
