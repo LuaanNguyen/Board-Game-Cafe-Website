@@ -135,7 +135,7 @@ function OpenedMobileNavbar({ setIsOpen, isOpen }) {
       </Link>
       <Link
         onClick={() => setIsOpen(!isOpen)}
-        to="https://docs.google.com/spreadsheets/d/1-TOvwUh-ziCB6QmLYvQlxtXuBd-aGiiO72GWAasby8o/edit"
+        to="/boardgames"
         className="hover:bg-orangeLight hover:rounded-lg p-2"
       >
         Board Games
