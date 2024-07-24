@@ -21,7 +21,7 @@ function Navbar() {
         <Link to="/">
           <img
             src="/sipnplay.png"
-            className="h-[100px] mx-2 bg-transparent"
+            className="h-[100px] mx-2 bg-transparent min-w-[100px]"
           ></img>
         </Link>
         <div className="flex gap-10 items-center">
@@ -57,9 +57,8 @@ function Navbar() {
             Feedback
           </Link>
           <Link
-            to="https://docs.google.com/spreadsheets/d/1-TOvwUh-ziCB6QmLYvQlxtXuBd-aGiiO72GWAasby8o/edit"
+            to="/boardgames"
             className="hover:bg-orangeLight hover:rounded-full p-2"
-            target="_blank"
           >
             Board Games
           </Link>
