@@ -7,28 +7,11 @@
 **Demo:** https://board-game-cafe-website.vercel.app/
 
 ## About the project
-This project was created as a website revamp for Sip & Play Boardgame Cafe, with a collection of over 500+ games! Sip & Play is Park Slope's very first board game cafe, offering a wide menu of apps, sandwiches and salads along with boba, beer, wine and coffee.
+This project was created as a website revamp for Sip & Play Boardgame Cafe, with a collection of over 500+ games! Sip & Play is Park Slope's very first board game cafe, offering a wide menu of apps, sandwiches and salads along with boba, beer, wine and coffee. 
 
-<br/>
+**This project was entirely done with no AI assistance*.*
 
-### Features
-- 3D menu
-- Events calendar
-- Mobile-friendly (responsive)
-- SEO-friendly (meta info)
-- Cafe location in google maps
-  
-<br/>
-
-### Technologies used
-
-- [React.js](https://react.dev/)
-- [Three.js](https://threejs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-
-<br/>
-
-### Contributors
+## Contributors
 <a href="https://github.com/LuaanNguyen/Board-Game-Cafe-Website/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=LuaanNguyen/Board-Game-Cafe-Website" />
 </a>
